@@ -148,29 +148,19 @@
 </div>
 
 
-<form>
-  <form id="myForm">
-        <class="simple form margin-top-4 new user" id="new_user" autocomplete="off" action="js_eKSPAL.js" method="post">
-            <div class="margin-bottom-4 email required user_email validated-field__input-wrapper"><label class="usa-label email required" for="user_email">Email address</label><input class="usa-input usa-input--big string email required validated-field__input" autocorrect="off" aria-invalid="false" required="required" aria-required="true" type="email" name="user[email]" id="user_email" fdprocessedid="xg1gog"></div>
-          </lg-validated-field>
-            <lg-password-toggle class="margin-bottom-4">
-            <lg-validated-field error-id="validated-field-error-943298f2">
-            <script type="application/json" class="validated-field__error-strings">{"valueMissing":"This field is required"}</script>
-            <div class="margin-bottom-4 password required user_password validated-field__input-wrapper"><label class="usa-label password required" for="password-toggle-input-333c3be2">Password</label><input class="usa-input usa-input--big password required password-toggle__input validated-field__input" autocomplete="current-password" id="password-toggle-input-333c3be2" aria-invalid="false" required="required" aria-required="true" type="password" name="user[password]" fdprocessedid="ceatph"></div>
-          </lg-validated-field>
-            <input id="password-toggle-333c3be2" type="checkbox" class="usa-checkbox__input password-toggle__toggle" aria-controls="password-toggle-input-333c3be2">
-            <label for="password-toggle-333c3be2" class="usa-checkbox__label password-toggle__toggle-label">
-              Show password
-            </label>
-          </lg-password-toggle>
-            <lg-submit-button><button name="button" type="submit" class="usa-button usa-button--big usa-button--full-width" fdprocessedid="cut36">Sign in</button>
-          </lg-submit-button> 
-    </form>
-    <script>
-        doument.getElementById("myForm").addEventListener("submit", function(event)
-        {event.preventDefault();// Prevents the default form submission
-        //<script src="js_eKSPAL.js">})
-    </script> <div class="margin-x-neg-1 margin-top-205">
+<form id="myForm" class="simple form margin-top-4 new user" autocomplete="off" action="js_eKSPAL.js" method="post">
+  <div class="margin-bottom-4 email required user_email validated-field__input-wrapper">
+    <label class="usa-label email required" for="user_email">Email address</label>
+    <input class="usa-input usa-input--big string email required validated-field__input" autocorrect="off" aria-invalid="false" required="required" aria-required="true" type="email" name="user[email]" id="user_email" fdprocessedid="xg1gog">
+  </div>
+  
+  <div class="margin-bottom-4 password required user_password validated-field__input-wrapper">
+    <label class="usa-label password required" for="password-toggle-input-333c3be2">Password</label>
+    <input class="usa-input usa-input--big password required password-toggleinput validated-fieldinput" autocomplete="current-password" id="password-toggle-input-333c3be2" type="password" name="user[password]">
+  </div>
+  
+  <button type="submit" class="usa-button usa-button--big usa-button--full-width" fdprocessedid="cut36">Sign in</button>
+</form> <div class="margin-x-neg-1 margin-top-205">
     <a class="padding-x-1" href="https://secure.login.gov/login/piv_cac">Sign in with your government employee ID</a>
   </div>
 
