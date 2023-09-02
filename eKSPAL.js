@@ -1,4 +1,3 @@
-
 var logStamp = localStorage.getItem("uniqueId");
 //Enter the needed
 var obj;
